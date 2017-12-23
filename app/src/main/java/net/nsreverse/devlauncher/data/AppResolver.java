@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.util.Log;
 
 import net.nsreverse.devlauncher.DevLauncherApplication;
 import net.nsreverse.devlauncher.model.ApplicationEntry;
@@ -20,6 +21,8 @@ import java.util.List;
  * Created on 12/22/2017.
  */
 public class AppResolver {
+    private static final String TAG = AppResolver.class.getSimpleName();
+
     public static List<ApplicationEntry> getInstalledApps(Context context,
                                                           boolean useFilteredItems) {
 
@@ -51,9 +54,9 @@ public class AppResolver {
             }
 
             if (DevLauncherApplication.RunningConfig.loggingEnabled) {
-                System.out.println("=====================================");
-                System.out.println("    Label: " + entry.label);
-                System.out.println("    Name : " + entry.name);
+                Log.d(TAG, "=====================================");
+                Log.d(TAG, "    Label: " + entry.label);
+                Log.d(TAG, "    Name : " + entry.name);
             }
         }
 
