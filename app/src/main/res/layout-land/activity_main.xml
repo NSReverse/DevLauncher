@@ -8,23 +8,30 @@
     tools:context="net.nsreverse.devlauncher.view.MainActivity"
     android:background="@color/mainActivityBackground">
 
-    <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
-        android:id="@+id/analog_clock"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        app:default_watchface="true"
-        android:layout_marginTop="24dp"/>
+        android:layout_height="wrap_content">
 
-    <TextClock
-        android:id="@+id/text_clock_1"
-        android:textSize="24sp"
-        android:format12Hour="h:mm:ss a\nMMM dd, yyyy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:layout_below="@id/analog_clock"/>
+        <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+            android:id="@+id/analog_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:default_watchface="true"
+            android:layout_marginTop="24dp"
+            android:layout_centerVertical="true"/>
+
+        <TextClock
+            android:id="@+id/text_clock_1"
+            android:textSize="24sp"
+            android:format12Hour="h:mm:ss a\nMMM dd, yyyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:layout_toEndOf="@id/analog_clock"/>
+
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/image_view_launch_app_list"
