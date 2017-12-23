@@ -5,7 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.nsreverse.devlauncher.view.MainActivity">
+    tools:context="net.nsreverse.devlauncher.view.MainActivity"
+    android:background="@color/mainActivityBackground">
+
+    <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:default_watchface="true"
+        android:layout_marginTop="24dp"/>
 
     <ImageView
         android:id="@+id/image_view_launch_app_list"

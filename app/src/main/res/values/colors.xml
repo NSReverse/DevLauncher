@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="mainActivityBackground">#616161</color>
+    <color name="mainActivityBackgroundDark">#424242</color>
 </resources>

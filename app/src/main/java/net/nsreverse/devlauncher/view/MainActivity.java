@@ -2,6 +2,7 @@ package net.nsreverse.devlauncher.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        int color = Color.argb(255, 255, 255, 255);
+        launchAppListImageView.setColorFilter(color);
     }
 }
