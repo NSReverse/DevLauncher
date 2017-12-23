@@ -7,11 +7,14 @@
     android:layout_height="match_parent"
     tools:context="net.nsreverse.devlauncher.view.MainActivity">
 
-    <Button
-        android:id="@+id/button_launch_app_list"
-        android:text="Launch App List"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/image_view_launch_app_list"
+        app:srcCompat="@drawable/ic_apps_black_24dp"
+        android:contentDescription="@string/more_apps"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
 
 </RelativeLayout>

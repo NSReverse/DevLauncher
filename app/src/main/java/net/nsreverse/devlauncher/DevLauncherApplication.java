@@ -7,6 +7,7 @@ package net.nsreverse.devlauncher;
 public class DevLauncherApplication {
     public static class RunningConfig {
         public static final String FILTER = "net.nsreverse";
-        public static final boolean loggingEnabled = true;
+        public static final boolean loggingEnabled = false;
+        public static final int columnCount = 3;
     }
 }

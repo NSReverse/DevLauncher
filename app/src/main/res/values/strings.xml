@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DevLauncher</string>
+
+    <string name="user_apps">User</string>
+    <string name="dev_apps">Developer</string>
+    <string name="more_apps">More Apps</string>
 </resources>

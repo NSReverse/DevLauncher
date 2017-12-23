@@ -46,6 +46,7 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
 
     public interface Delegate {
         void applicationSelected(int position, ApplicationEntry selectedEntry);
+        void applicationLongSelected(int position, ApplicationEntry selectedEntry);
     }
 
     @Override
@@ -73,7 +74,8 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
     }
 
     class AppListViewHolder extends RecyclerView.ViewHolder
-                            implements View.OnClickListener {
+                            implements View.OnClickListener,
+                                       View.OnLongClickListener {
 
         @BindView(R.id.image_view_icon) ImageView iconImageView;
         @BindView(R.id.text_view_title) TextView titleTextView;
@@ -84,6 +86,7 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
             ButterKnife.bind(this, itemView);
 
             itemView.setOnClickListener(this);
+            itemView.setOnLongClickListener(this);
         }
 
         @Override
@@ -92,6 +95,18 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
                 delegate.applicationSelected(getAdapterPosition(),
                         dataSource.get(getAdapterPosition()));
             }
+        }
+
+        @Override
+        public boolean onLongClick(View v) {
+            if (delegate != null) {
+                delegate.applicationLongSelected(getAdapterPosition(),
+                        dataSource.get(getAdapterPosition()));
+
+                return true;
+            }
+
+            return false;
         }
     }
 }
