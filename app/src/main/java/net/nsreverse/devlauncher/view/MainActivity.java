@@ -48,4 +48,9 @@ public class MainActivity extends AppCompatActivity {
         int color = Color.argb(255, 255, 255, 255);
         launchAppListImageView.setColorFilter(color);
     }
+
+    @Override
+    public void onBackPressed() {
+        // Disable so that this activity doesn't close.
+    }
 }
