@@ -25,7 +25,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by Robert on 12/22/2017.
+ * UserApplicationsFragment -
+ *
+ * This fragment displays a list of installed apps, not from Android Studio.
+ *
+ * @author Robert
+ * Created on 12/22/2017.
  */
 public class UserApplicationsFragment extends Fragment
                                       implements AppListAdapter.Delegate {

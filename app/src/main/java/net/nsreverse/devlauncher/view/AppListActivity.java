@@ -16,6 +16,14 @@ import net.nsreverse.devlauncher.view.fragments.UserApplicationsFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * AppListActivity -
+ *
+ * This is the Activity that displays a list of apps installed on the device.
+ *
+ * @author Robert
+ * Created on 12/22/2017
+ */
 public class AppListActivity extends AppCompatActivity {
 
     private static final String KEY_CURRENT_FRAGMENT = "current_fragment";

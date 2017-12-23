@@ -12,9 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Robert on 12/22/2017.
+ * AppResolver -
+ *
+ * This class gets a list of installed apps on the device.
+ *
+ * @author Robert
+ * Created on 12/22/2017.
  */
-
 public class AppResolver {
     public static List<ApplicationEntry> getInstalledApps(Context context,
                                                           boolean useFilteredItems) {

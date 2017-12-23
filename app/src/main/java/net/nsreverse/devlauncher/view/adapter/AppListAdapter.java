@@ -18,9 +18,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by Robert on 12/22/2017.
+ * AppListAdapter -
+ *
+ * This class takes a list of installed apps and adapts it to a RecyclerView.
+ *
+ * @author Robert
+ * Created on 12/22/2017.
  */
-
 public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListViewHolder> {
 
     private Delegate delegate;

@@ -1,9 +1,13 @@
 package net.nsreverse.devlauncher;
 
 /**
- * Created by Robert on 12/22/2017.
+ * DevLauncherApplication -
+ *
+ * This holds globally-available variables to configure the app.
+ *
+ * @author Robert
+ * Created on 12/22/2017.
  */
-
 public class DevLauncherApplication {
     public static class RunningConfig {
         public static final String FILTER = "net.nsreverse";

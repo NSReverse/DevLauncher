@@ -13,6 +13,14 @@ import net.nsreverse.devlauncher.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * MainActivity -
+ *
+ * This class is main screen for the Launcher.
+ *
+ * @author Robert
+ * Created on 12/22/2017
+ */
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.image_view_launch_app_list) ImageView launchAppListImageView;
